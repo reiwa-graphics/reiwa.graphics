@@ -1,18 +1,19 @@
 {
-  "name": "reiwa-graphics",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "@zeit/next-css": "^1.0.1",
-    "@zeit/next-sass": "^1.0.1",
-    "next": "9.4.4",
-    "node-sass": "^4.14.1",
-    "react": "16.13.1",
-    "react-dom": "16.13.1"
-  }
+    "name": "reiwa-graphics",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "deploy": "npm run build && npm run export"
+    },
+    "dependencies": {
+        "@zeit/next-css": "^1.0.1",
+        "@zeit/next-sass": "^1.0.1",
+        "next": "9.4.4",
+        "node-sass": "^4.14.1",
+        "react": "16.13.1",
+        "react-dom": "16.13.1"
+    }
 }
