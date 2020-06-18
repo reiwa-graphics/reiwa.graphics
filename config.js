@@ -1,11 +1,16 @@
-export const MY_SEO = {
-    title: 'MyTitle',
-    description: 'My description',
+export const SEO = {
+    favicon: './favicon.ico',
+    title: 'REIWA Graphics',
+    description: 'あなたの仕事をさらに輝かせる制作プロダクション',
     openGraph: {
         type: 'website',
-        url: 'My URL',
-        title: 'MyTitle',
-        description: 'My description',
-        image: '...jpg',
+        url: 'https://reiwa.graphics',
+        title: 'REIWA Graphics',
+        description: 'あなたの仕事をさらに輝かせる制作プロダクション',
+        image: 'ogp.png',
+    },
+    twitter: {
+        cardType: 'summary_large_image',
+        image: 'ogp.png'
     }
 };
