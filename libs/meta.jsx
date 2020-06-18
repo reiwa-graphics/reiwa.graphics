@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { SEO } from '../config';
+import { GA_TRACKING_ID } from './ga';
 
 const Meta = () => (
     <Head>
@@ -38,6 +39,24 @@ const Meta = () => (
         <meta name="twitter:image" content={SEO.twitter.image} />
         <meta name="twitter:card" content={SEO.twitter.cardType} />
         <link rel="shortcut icon" href={SEO.favicon} />
+
+        {/* Global Site Tag (gtag.js) - Google Analytics */}
+        <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+        />
+        <script
+            dangerouslySetInnerHTML={{
+                __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_TRACKING_ID}', {
+              page_path: window.location.pathname,
+            });
+          `,
+            }}
+        />
     </Head>
 );
 

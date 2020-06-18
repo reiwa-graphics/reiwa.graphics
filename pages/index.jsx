@@ -1,4 +1,4 @@
-import Meta from './meta';
+import Meta from '../libs/meta';
 
 export default () => {
     return (
