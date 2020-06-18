@@ -1,3 +1,4 @@
+import Router from 'next/router'
 import * as gtag from '../libs/ga'
 import '../public/style.scss'
 
