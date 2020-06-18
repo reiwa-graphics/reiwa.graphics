@@ -1,6 +1,6 @@
 import Router from 'next/router'
 import * as ga from '../libs/ga'
-import '../public/scss/style.scss'
+import './style.scss';
 
 Router.events.on('routeChangeComplete', url => ga.pageview(url))
 
