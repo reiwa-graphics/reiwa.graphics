@@ -7,10 +7,10 @@ export const SEO = {
         url: 'https://reiwa.graphics',
         title: 'REIWA Graphics',
         description: 'あなたの仕事をさらに輝かせる制作プロダクション',
-        image: 'ogp.png',
+        image: 'https://reiwa.graphics/ogp.png',
     },
     twitter: {
         cardType: 'summary_large_image',
-        image: 'ogp.png'
+        image: 'https://reiwa.graphics/ogp.png'
     }
 };
