@@ -1,17 +1,45 @@
 {
     "name": "reiwa-graphics",
-    "version": "0.1.0",
-    "private": true,
+    "version": "1.0.0",
+    "description": "reiwa-graphics",
     "scripts": {
-        "dev": "next dev",
-        "build": "next build",
-        "start": "next start",
-        "deploy": "next build && next export"
+        "commit": "node ./node_modules/cz-customizable/standalone.js",
+        "start": "gulp",
+        "build": "npm run clean & gulp scss",
+        "clean": "rimraf dist/{css/*,js/*}"
     },
-    "dependencies": {
-        "next": "9.4.4",
-        "node-sass": "^4.14.1",
-        "react": "16.13.1",
-        "react-dom": "16.13.1"
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/REIWA-Graphics/reiwa.graphics.git"
+    },
+    "author": "newcreator-org",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/REIWA-Graphics/reiwa.graphics/issues"
+    },
+    "homepage": "https://github.com/REIWA-Graphics/reiwa.graphics#readme",
+    "devDependencies": {
+        "@babel/cli": "7.10.1",
+        "@babel/core": "7.10.2",
+        "@babel/preset-env": "7.10.2",
+        "@babel/register": "7.10.1",
+        "babel-loader": "8.1.0",
+        "browser-sync": "2.26.7",
+        "cz-customizable": "6.2.0",
+        "gulp": "4.0.2",
+        "gulp-autoprefixer": "7.0.1",
+        "gulp-babel": "8.0.0",
+        "gulp-postcss": "8.0.0",
+        "gulp-rename": "2.0.0",
+        "gulp-sass": "4.1.0",
+        "gulp-uglify": "3.0.2",
+        "postcss-cssnext": "3.1.0"
+    },
+    "eslintConfig": {
+        "extends": "airbnb",
+        "env": {
+            "browser": true,
+            "node": true
+        }
     }
 }
